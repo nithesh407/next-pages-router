@@ -27,6 +27,8 @@ export async function getServerSideProps() {
   );
   const db = client.db();
 
+
+
   const meetupsCollection = db.collection('meetups');
 
   const meetups = await meetupsCollection.find().toArray();
